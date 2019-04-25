@@ -1,0 +1,19 @@
+{
+  "name": "bootstrap-4-introduccion",
+  "version": "1.0.0",
+  "description": "Aprendiendo Bootstrap 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bootstrap-4"
+  ],
+  "author": "Juan Carlos Jiménez Gutiérrez <jcjimenez29@misena.edu.co>",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.0"
+  },
+  "devDependencies": {}
+}
