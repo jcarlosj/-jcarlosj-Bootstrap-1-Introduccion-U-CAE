@@ -4,77 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bootstrap 4 - Grid</title>
+    <title>Bootstrap 4 - Practica: Grid</title>
 
     <link rel="stylesheet" href="./dist/assets/css/bootstrap.css">
     <link rel="stylesheet" href="./dist/assets/css/master.css">
 </head>
 <body>
     <div class="container">
-        <h2>Grid 1</h2>
-        <div class="row">
-            <div class="col-one">
-                <h2>Title</h2>
-                <p>Adipisicing elit. Sint aliquam voluptate ex, consequatur, magnam, cupiditate facere iste praesentium distinctio voluptates ipsa fugiat delectus! Facere dolore ut cumque maxime. Natus, quam!</p>
+        <header class="row">
+            <div class="col">
+                <h1>Header</h1>
             </div>
-        </div>
-    </div>
-    <div class="container">
-        <h2>Grid 2</h2>
-        <h5>Anidación de columnas</h5>
-        <div class="row">
-            <div class="col-12 col-zero">
-                <h2>Title #0</h2>
-                <p>Voluptate ex!</p>
+        </header>
+        <section class="row main-container">
+            <main class="col-md-8">
+                <h2>Main</h2>
+                <p>Amet consectetur adipiscing elit ut aliquam purus sit amet luctus. Condimentum mattis pellentesque id nibh tortor id aliquet lectus. Ipsum dolor sit amet consectetur. Urna porttitor rhoncus dolor purus non enim praesent. Elementum curabitur vitae nunc sed velit dignissim sodales. Dolor sit amet consectetur adipiscing elit duis tristique. Ultricies tristique nulla aliquet enim. Facilisi nullam vehicula ipsum a arcu cursus vitae. Ut consequat semper viverra nam libero justo. Faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper.</p>
+                <p>Sem integer vitae justo eget magna fermentum iaculis eu non. Mauris in aliquam sem fringilla ut morbi. Auctor augue mauris augue neque gravida in fermentum. Ac placerat vestibulum lectus mauris ultrices. Ultricies mi eget mauris pharetra et. Lacus vestibulum sed arcu non odio. Viverra ipsum nunc aliquet bibendum enim facilisis. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque. Eget nunc scelerisque viverra mauris in aliquam sem. Adipiscing tristique risus nec feugiat in.</p>
+            </main>
+            <aside class="col-md-4">
+                <h2>Aside</h2>
+            </aside>
+        </section>
+        <section class="row widgets">
+            <div class="col-md-3">
+                <h2>Title Widget #1</h2>
+                <p>Class ultricies litora suscipit eu non semper mus, condimentum mattis gravida morbi quis. Rutrum egestas elementum auctor integer cum quam, porta eu gravida rhoncus ut dis, tincidunt quis odio per feugiat.</p>
+                <button class="btn btn-primary">Read more</button>
             </div>
-            <div class="col-6 col-md-8 col-one">
-
-                <h2>Nested #1</h2> 
-                <div class="row internal-row">
-                    <div class="col-12 col-md-8 col-one">
-                        <h2>Title #1</h2>
-                        <p>Voluptate ex!</p>
-                    </div>
-                    <div class="col-12 col-md-4 col-two">
-                        <h2>Title #2</h2>
-                        <p>Sint aliquam!</p>
-                    </div>
-                </div>
-                
-            </div>    
-            <div class="col-6 col-md-4 col-four">
-                <h2>Title #3</h2>
-                <p>Magnam. Natus, quam!</p>
+            <div class="col-md-3">
+                <h2>Title Widget #2</h2>
+                <p>Commodo tellus praesent integer et sed velit fringilla egestas, purus tempus nostra lacinia quisque inceptos morbi, cum dis dignissim sodales parturient libero magnis. Inceptos torquent penatibus mi quam porta.</p>
+                <button class="btn btn-primary">Read more</button>
             </div>
-        </div>
-    </div>
-    <div class="container">
-        <h2>Grid 3</h2>
-        <div class="row">
-            <div class="col col-auto col-five">
-                <h2>Title </h2>
-                <p>Sint aliquam.</p>
+            <div class="col-md-3">
+                <h2>Title Widget #3</h2>
+                <p>Netus donec diam rutrum mauris nulla fermentum, suscipit senectus mi sapien primis fusce non, litora proin condimentum dictumst sociis. Tempus donec faucibus ut tempor orci sociis consequat taciti.</p>
+                <button class="btn btn-primary">Read more</button>
             </div>
-            <div class="col col-sm col-md col-six">
-                <h2>Title</h2>
-                <p>Facere dolore ut cumque maxime. Natus, quam!</p>
+        </section>
+        <footer class="row">
+            <div class="col">
+                <h1>Footer</h1>
             </div>
-            <div class="col-12 col-sm col-md col-seven">
-                <h2>Title</h2>
-                <p>Adipisicing elit. Sint aliquam voluptate ex, consequatur, magnam.</p>
-            </div>
-
-            <div class="w-100"></div>
-
-            <div class="col-6 col-md col-eight">
-                <h2>Title</h2>
-                <p>Iste praesentium distinctio voluptates ipsa fugiat delectus!</p>
-            </div>
-            <div class="col-6 col-md col-nine">
-                <h2>Title</h2>
-                <p>A cupiditate facere iste praesentium distinctio voluptates ipsa fugiat delectus! Facere dolore ut cumque maxime. Natus, quam!</p>
-            </div>
-        </div>
+        </header>
     </div>
 
     <script src="./dist/assets/js/jquery.min.js"></script>

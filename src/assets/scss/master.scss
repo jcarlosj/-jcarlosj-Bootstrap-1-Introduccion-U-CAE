@@ -1,70 +1,66 @@
-$bg-row-color: #F2F2F2;
-$color-text: gray;
-$color-text-light: $bg-row-color;
-$color-h2: darken( $color-text, 20% );
+/* Array anidado dde Colores */
+$colors: (
+    body: (
+        bg: #F0F3F5,
+        color: white
+    ),
+    header: (
+        bg: #9ACA40,
+        color: white
+    ),
+    main: (
+        bg: white,
+        color: #424242
+    ), 
+    aside: (
+        bg: #DEE5E8,
+        color: gray
+    ),
+    widget: (
+        bg: #2196F3,
+        color: #F2F2F2
+    ),
+    footer: (
+        bg: #1E1E1E,
+        color: #F2F2F2
+    )
+);
 
-body {
-    color: $color-text;
+// Función para iterar los colores del Array anidado
+@function color( $color, $tone: 'base' ) {
+    @return map-get( map-get( $colors, $color ), $tone );
 }
 
-.row {
-    background-color: lighten($color: green, $amount: 50% );
-    height: auto;
+body {
+    background-color: color( body, bg );
+    color: color( body, color );
+}
 
-    &.internal-row {
-        background-color: lighten($color: green, $amount: 20% );
-    }
+header {
+    background-color: color( header, bg );
+    color: color( header, color );
+}
+
+main {
+    background-color: color( main, bg );
+    color: color( main, color );
+}
+
+aside {
+    background-color: color( aside, bg );
+    color: color( aside, color );
+}
+
+.widgets {
+    background-color: color( aside, bg );
 
     & > div {
-        margin: 10px 0;
-        text-align: center;
+        background-color: color( widget, bg );
+        color: color( widget, color );
+    }
+}
 
-        h2 {
-            color: $color-h2;
-        }
-    }
-
-    & .col-two,
-    & .col-three,
-    & .col-four {
-        border: 1px dotted gray;
-        box-sizing: border-box;
-    }
-
-    & .col-zero {
-        background-color: white;
-        border: 1px dotted gray;
-    }
-    & .col-one {
-        background-color: $bg-row-color;
-    }
-    & .col-two {
-        background-color: darken( $bg-row-color, 5% );
-    }
-    & .col-three {
-        background-color: darken( $bg-row-color, 10% );
-    }
-    & .col-four {
-        background-color: darken( $bg-row-color, 15% );
-    }
-    & .col-five {
-        background-color: darken( $bg-row-color, 20% );
-        color: $color-text-light;
-    }
-    & .col-six {
-        background-color: darken( $bg-row-color, 25% );
-        color: $color-text-light;
-    }
-    & .col-seven {
-        background-color: darken( $bg-row-color, 30% );
-        color: $color-text-light;
-    }
-    & .col-eight {
-        background-color: darken( $bg-row-color, 35% );
-        color: $color-text-light;
-    }
-    & .col-nine {
-        background-color: darken( $bg-row-color, 40% );
-        color: $color-text-light;
-    }
+footer {
+    background-color: color( footer, bg );
+    color: color( footer, color );
 }
