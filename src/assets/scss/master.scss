@@ -52,7 +52,7 @@ aside {
 }
 
 .widgets {
-    background-color: color( aside, bg );
+    background-color: color( body, bg );
 
     & > div {
         background-color: color( widget, bg );
