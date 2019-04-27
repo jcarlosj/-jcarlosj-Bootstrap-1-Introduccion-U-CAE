@@ -9,8 +9,12 @@ body {
 
 .row {
     background-color: lighten($color: green, $amount: 50% );
-    height: 200px;
-    
+    height: auto;
+
+    &.internal-row {
+        background-color: lighten($color: green, $amount: 20% );
+    }
+
     & > div {
         margin: 10px 0;
         text-align: center;

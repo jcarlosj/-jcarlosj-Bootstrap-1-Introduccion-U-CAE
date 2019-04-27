@@ -21,59 +21,28 @@
     </div>
     <div class="container">
         <h2>Grid 2</h2>
-        <h5>Ordenar columnas: Columna 2 primero, Columna 0 al último</h5>
-        <div class="row justify-content-between">
-            <div class="col-auto col-zero order-last">
+        <h5>Anidación de columnas</h5>
+        <div class="row">
+            <div class="col-12 col-zero">
                 <h2>Title #0</h2>
-                <p>Uam cuptate!</p>
-            </div>
-            <div class="col-auto col-two">
-                <h2>Title #1</h2>
                 <p>Voluptate ex!</p>
             </div>
-            <div class="col-auto col-three order-first">
-                <h2>Title #2</h2>
-                <p>Sint aliquam!</p>
-            </div>
-            <div class="col-auto col-four">
-                <h2>Title #3</h2>
-                <p>Magnam. Natus, quam!</p>
-            </div>
-        </div>
-        <h5>Ordenar columnas: Columna 2 y 3 primero en tamaño grande.</h5>
-        <div class="row justify-content-between">
-            <div class="col-auto col-zero">
-                <h2>Title #0</h2>
-                <p>Uam cuptate!</p>
-            </div>
-            <div class="col-auto col-two order-lg-first">
-                <h2>Title #1</h2>
-                <p>Voluptate ex!</p>
-            </div>
-            <div class="col-auto col-three">
-                <h2>Title #2</h2>
-                <p>Sint aliquam!</p>
-            </div>
-            <div class="col-auto col-four order-lg-first">
-                <h2>Title #3</h2>
-                <p>Magnam. Natus, quam!</p>
-            </div>
-        </div>
-        <h5>Ordenar columnas: Invertidas.</h5>
-        <div class="row justify-content-between">
-            <div class="col-auto col-zero order-sm-11 order-lg-12">
-                <h2>Title #0</h2>
-                <p>Uam cuptate!</p>
-            </div>
-            <div class="col-auto col-two order-sm-2 order-lg-11">
-                <h2>Title #1</h2>
-                <p>Voluptate ex!</p>
-            </div>
-            <div class="col-auto col-three order-sm-12 order-lg-5">
-                <h2>Title #2</h2>
-                <p>Sint aliquam!</p>
-            </div>
-            <div class="col-auto col-four order-sm-5 order-lg-2">
+            <div class="col-6 col-md-8 col-one">
+
+                <h2>Nested #1</h2> 
+                <div class="row internal-row">
+                    <div class="col-12 col-md-8 col-one">
+                        <h2>Title #1</h2>
+                        <p>Voluptate ex!</p>
+                    </div>
+                    <div class="col-12 col-md-4 col-two">
+                        <h2>Title #2</h2>
+                        <p>Sint aliquam!</p>
+                    </div>
+                </div>
+                
+            </div>    
+            <div class="col-6 col-md-4 col-four">
                 <h2>Title #3</h2>
                 <p>Magnam. Natus, quam!</p>
             </div>
