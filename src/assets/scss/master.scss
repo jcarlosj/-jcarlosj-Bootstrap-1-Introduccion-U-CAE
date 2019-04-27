@@ -9,6 +9,7 @@ body {
 
 .row {
     background-color: lighten($color: green, $amount: 50% );
+    height: 200px;
     
     & > div {
         margin: 10px 0;
