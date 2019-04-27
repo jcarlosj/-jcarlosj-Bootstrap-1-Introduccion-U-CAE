@@ -1,7 +1,18 @@
-$bg-color: #F1F1F1;
+$bg-row-color: #F2F2F2;
 $color-text: gray;
+$color-h2: darken( $color-text, 20% );
 
 body {
-    background-color: $bg-color;
     color: $color-text;
+}
+
+.row {
+    & > div {
+        background-color: $bg-row-color;
+        margin: 10px 0;
+
+        h2 {
+            color: $color-h2;
+        }
+    }
 }
