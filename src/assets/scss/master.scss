@@ -57,6 +57,11 @@ aside {
     & > div {
         background-color: color( widget, bg );
         color: color( widget, color );
+
+        button {
+           background-color: color( widget, color );
+           color: color( widget, bg ); 
+        }
     }
 }
 
