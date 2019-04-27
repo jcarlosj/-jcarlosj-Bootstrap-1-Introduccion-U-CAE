@@ -27,6 +27,10 @@ body {
         box-sizing: border-box;
     }
 
+    & .col-zero {
+        background-color: white;
+        border: 1px dotted gray;
+    }
     & .col-one {
         background-color: $bg-row-color;
     }
