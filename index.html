@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <h1>Typography <small class="text-muted">Tipografía</small></h1>
-        <h2>Paragraph</h2>
+        <h2>Utilities: Text</h2>
         <div class="row pt-3 pb-2">
             <div class="col col-one d-block d-sm-none">XS - Extra Small</div>
             <div class="col col-two d-none d-sm-block d-md-none">SM - Small</div>
@@ -21,31 +21,77 @@
             <div class="col col-five d-none d-xl-block">XL - Extra Large</div>
         </div>
 
-        <h3>Lead</h3>
-        <p>La clase <code>.lead</code> destaca un párrafo</p>
+        <h3>Alignment</h3>
+        <p>Clases para alineación de párrafos (derecha, centro e izquierda) <code>text-right, text-center, text-left</code></p>
         <div class="row">
-            <div class="col col-six">
-                <p class="lead">His audiam deserunt in, eum ubique voluptatibus te. In reque dicta usu. Ne rebum dissentiet eam, vim omnis deseruisse id. Ullum deleniti vituperata at quo, insolens complectitur te eos, ea pri dico munere propriae. Vel ferri facilis ut, qui paulo ridens praesent ad. Possim alterum qui cu. Accusamus consulatu ius te, cu decore soleat appareat usu.</p>
-                <p>Est ei erat mucius quaeque. Ei his quas phaedrum, efficiantur mediocritatem ne sed, hinc oratio blandit ei sed. Blandit gloriatur eam et. Brute noluisse per et, verear disputando neglegentur at quo. Sea quem legere ei, unum soluta ne duo. Ludus complectitur quo te, ut vide autem homero pro.</p>
-                <p>Vis id minim dicant sensibus. Pri aliquip conclusionemque ad, ad malis evertitur torquatos his. Has ei solum harum reprimique, id illum saperet tractatos his. Ei omnis soleat antiopam quo. Ad augue inani postulant mel, mel ea qualisque forensibus.</p>
+            <div class="col-4 col-zero">
+                <h4 class="text-right">Alinea a la derecha</h4>
+                <p class="text-right">Expetenda tincidunt in sed, ex partem placerat sea, porro commodo ex eam. His putant aeterno interesset at. Usu ea mundi tincidunt, omnium virtute aliquando ius ex.</p>
+            </div>
+            <div class="col-4 col-one">
+                <h4 class="text-center">Alinea al centro </h4>
+                <p class="text-center">Etiam ut congue magna. Integer a lorem non metus tempus ornare. Nulla aliquet neque elit, eu luctus odio sagittis et. Sed eu mauris ac quam volutpat ultrices. </p>
+            </div>
+            <div class="col-4 col-two">
+                <h4 class="text-left">Alinea a la izquierda</h4>
+                <p class="text-left"> Suspendisse erat nisl, pulvinar at hendrerit pretium, ultrices at mi. Fusce ultrices lorem vitae convallis sodales. Phasellus sed lobortis magna. Nulla facilisi.</p>
             </div>
         </div>
-        <hr>
-        <h3>Inline text elements</h3>
-        <p>Elementos de texto en línea. Diseño de elementos HTML5 en línea comunes.</p>
+        <p>Solo cuando se alineará a la derecha cuando el tamaño del dispositivo sea el indicado</p>
         <div class="row">
-            <div class="col col-seven">
-                <p>Puede utilizar la etiqueta de marca para <mark>resaltar</mark> texto.</p>
-                <p><del>Esta línea de texto debe ser tratada como texto eliminado.</del></p>
-                <p><s>Ésta línea de texto se debe de considerar no correcta.</s></p>
-                <p><ins>Esta línea de texto debe ser tratada como una adición al documento.</ins></p>
-                <p><u>Esta línea de texto se representará como subrayado.</u></p>
-                <p><small>Esta línea de texto debe ser tratada como letra pequeña.</small></p>
-                <p><strong>Esta línea se representa como texto en negrita</strong></p>
-                <p><em>Esta línea se representa como texto en cursiva.</em></p>
+            <div class="col-12 col-one">
+                <p class="text-sm-right">Alinea a la derecha en <small>SM - Small</small></p>
+                <p class="text-md-right">Alinea a la derecha en <small>MD - Medium</small></p>
+                <p class="text-lg-right">Alinea a la derecha en <small>LG - Large</small></p>
+                <p class="text-xl-right">Alinea a la derecha en <small>XL - Extra Large</small></p>
+            </div>
+        </div>    
+        <p><p>Solo cuando indicanos el 'breakpoint' a la clase <code>text-{breakpoint}-right, text-{breakpoint}-center, text-{breakpoint}-left</code> se alinea el texto</p></p>
+        <div class="row">
+            <div class="col-4 col-zero">
+                <h4 class="text-lg-right">Alinea a la derecha <br> <small>LG - Large</small></h4>
+                <p class="text-lg-right">Expetenda tincidunt in sed, ex partem placerat sea, porro commodo ex eam. His putant aeterno interesset at. Usu ea mundi tincidunt, omnium virtute aliquando ius ex.</p>
+            </div>
+            <div class="col-4 col-one">
+                <h4 class="text-sm-center">Alinea al centro <br> <small>SM - Small</small></h4>
+                <p class="text-sm-center">Etiam ut congue magna. Integer a lorem non metus tempus ornare. Nulla aliquet neque elit, eu luctus odio sagittis et. Sed eu mauris ac quam volutpat ultrices. </p>
+            </div>
+            <div class="col-4 col-two">
+                <h4 class="text-md-left">Alinea a la izquierda <br> <small>MD - Medium</small></h4>
+                <p class="text-md-left"> Suspendisse erat nisl, pulvinar at hendrerit pretium, ultrices at mi. Fusce ultrices lorem vitae convallis sodales. Phasellus sed lobortis magna. Nulla facilisi.</p>
             </div>
         </div>
-        <hr>
+        <h3>Justify</h3>
+        <p>Clase justificar párrafo <code>text-justify</code></p>
+        <div class="row">
+            <div class="col-12 col-one">
+                <p class="text-justify">Donec eu tortor at arcu sodales volutpat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam dui odio, volutpat in justo et, fringilla placerat ante. Curabitur viverra turpis sed iaculis placerat. Aenean metus justo, dictum at auctor nec, sollicitudin in ex. Nullam imperdiet vulputate tortor at convallis. Vivamus fermentum ex metus, ut commodo massa suscipit ut. Maecenas sed diam eu orci rutrum porta vel at nibh. Etiam rhoncus quis nisl in ornare. Ut dapibus urna vel imperdiet suscipit. Donec mollis nec dolor non laoreet. Nam eget neque nunc. </p>
+            </div>
+        </div>
+        <h3>Text transform</h3>
+        <p>Clase que transforma el texto a: minúsculas <code>text-lowercase</code>, mayúsculas <code>text-uppercase</code> y Capital <code>text-capitalize</code></p>
+        <div class="row">
+            <div class="col-12 col-one">
+                <p class="text-lowercase">Estoy totalmente en minúsculas <small>Minúsculas</small></p>
+                <p class="text-uppercase">Estoy totalmente en mayúsculas <small>Mayúsculas</small></p>
+                <p class="text-capitalize">La primera letra de cada alabra está en Mayúscula <small>Capital</small></p>
+            </div>
+        </div>    
+        <h3>Font weight and italics</h3>
+        <ul>
+            <li>Clases que cambian el peso de la negrilla de un texto <code>font-weight-bold, font-weight-bolder, font-weight-normal, font-weight-light, font-weight-lighter</code> </li>
+            <li>Clase que cambia el texto a cursiva <code>font-italic</code></li>
+        </ul>
+        <div class="row">
+            <div class="col-12 col-two">
+                    <p class="font-weight-bold">Soy un texto en negrita. <small>font-weight-bold</small></p>
+                    <p class="font-weight-bolder">Soy un texto de mayor peso (relativo al elemento principal). <small>font-weight-bolder</small></p>
+                    <p class="font-weight-normal">Soy un texto de peso normal. <small>font-weight-normal</small></p>
+                    <p class="font-weight-light">Soy un texto ligero. <small>font-weight-light</small></p>
+                    <p class="font-weight-lighter">Soy un texto más ligero (relativo al elemento principal). <small>font-weight-lighter</small></p>
+                    <p class="font-italic">Soy un texto en cursiva. <small>font-italic</small></p>
+            </div>
+        </div>    
     </div>
 
     <script src="./dist/assets/js/jquery.min.js"></script>

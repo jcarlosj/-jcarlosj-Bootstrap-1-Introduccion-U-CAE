@@ -24,6 +24,11 @@ hr {
         margin: 10px 0;
         text-align: center;
 
+        .col-four,
+        .col-one {
+            text-align: left;
+        }
+
         h2 {
             //color: $color-h2;
         }
