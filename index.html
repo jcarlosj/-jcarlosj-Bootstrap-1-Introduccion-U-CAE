@@ -4,94 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bootstrap 4 - Elementos</title>
+    <title>Bootstrap 4 - Componentes</title>
 
     <link rel="stylesheet" href="./dist/assets/css/bootstrap.css">
     <link rel="stylesheet" href="./dist/assets/css/master.css">
 </head>
 <body>
+    <header class="container">
+        <h1>Alertas</h1>
+    </header>
     <div class="container">
-        <h1>Typography <small class="text-muted">Tipografía</small></h1>
-        <h2>Utilities: Text</h2>
-        <div class="row pt-3 pb-2">
-            <div class="col col-one d-block d-sm-none">XS - Extra Small</div>
-            <div class="col col-two d-none d-sm-block d-md-none">SM - Small</div>
-            <div class="col col-three d-none d-md-block d-lg-none">MD - Medium</div>
-            <div class="col col-four d-none d-lg-block d-xl-none">LG - Large</div>
-            <div class="col col-five d-none d-xl-block">XL - Extra Large</div>
+        <p>Usando las clases: <code>alert, alert-primary, alert-secondary, alert-success, alert-danger, alert-warning, alert-info, alert-light, alert-dark, alert-link</code> podemos representar bloques de mensaje contextuales en respuesta a acciones típicas de los usuarios.</p>
+        <div class="alert alert-primary" role="alert">
+            <strong>Aviso:</strong> Una simple alerta primaria <a class="alert-link" href="#">¡échale un vistazo!</a>
         </div>
-
-        <h3>Alignment</h3>
-        <p>Clases para alineación de párrafos (derecha, centro e izquierda) <code>text-right, text-center, text-left</code></p>
-        <div class="row">
-            <div class="col-4 col-zero">
-                <h4 class="text-right">Alinea a la derecha</h4>
-                <p class="text-right">Expetenda tincidunt in sed, ex partem placerat sea, porro commodo ex eam. His putant aeterno interesset at. Usu ea mundi tincidunt, omnium virtute aliquando ius ex.</p>
-            </div>
-            <div class="col-4 col-one">
-                <h4 class="text-center">Alinea al centro </h4>
-                <p class="text-center">Etiam ut congue magna. Integer a lorem non metus tempus ornare. Nulla aliquet neque elit, eu luctus odio sagittis et. Sed eu mauris ac quam volutpat ultrices. </p>
-            </div>
-            <div class="col-4 col-two">
-                <h4 class="text-left">Alinea a la izquierda</h4>
-                <p class="text-left"> Suspendisse erat nisl, pulvinar at hendrerit pretium, ultrices at mi. Fusce ultrices lorem vitae convallis sodales. Phasellus sed lobortis magna. Nulla facilisi.</p>
-            </div>
+        <div class="alert alert-secondary" role="alert">
+            <strong>Aviso:</strong> Una simple alerta secundaria <a class="alert-link" href="#">¡échale un vistazo!</a>
         </div>
-        <p>Solo cuando se alineará a la derecha cuando el tamaño del dispositivo sea el indicado</p>
-        <div class="row">
-            <div class="col-12 col-one">
-                <p class="text-sm-right">Alinea a la derecha en <small>SM - Small</small></p>
-                <p class="text-md-right">Alinea a la derecha en <small>MD - Medium</small></p>
-                <p class="text-lg-right">Alinea a la derecha en <small>LG - Large</small></p>
-                <p class="text-xl-right">Alinea a la derecha en <small>XL - Extra Large</small></p>
-            </div>
-        </div>    
-        <p><p>Solo cuando indicanos el 'breakpoint' a la clase <code>text-{breakpoint}-right, text-{breakpoint}-center, text-{breakpoint}-left</code> se alinea el texto</p></p>
-        <div class="row">
-            <div class="col-4 col-zero">
-                <h4 class="text-lg-right">Alinea a la derecha <br> <small>LG - Large</small></h4>
-                <p class="text-lg-right">Expetenda tincidunt in sed, ex partem placerat sea, porro commodo ex eam. His putant aeterno interesset at. Usu ea mundi tincidunt, omnium virtute aliquando ius ex.</p>
-            </div>
-            <div class="col-4 col-one">
-                <h4 class="text-sm-center">Alinea al centro <br> <small>SM - Small</small></h4>
-                <p class="text-sm-center">Etiam ut congue magna. Integer a lorem non metus tempus ornare. Nulla aliquet neque elit, eu luctus odio sagittis et. Sed eu mauris ac quam volutpat ultrices. </p>
-            </div>
-            <div class="col-4 col-two">
-                <h4 class="text-md-left">Alinea a la izquierda <br> <small>MD - Medium</small></h4>
-                <p class="text-md-left"> Suspendisse erat nisl, pulvinar at hendrerit pretium, ultrices at mi. Fusce ultrices lorem vitae convallis sodales. Phasellus sed lobortis magna. Nulla facilisi.</p>
-            </div>
+        <div class="alert alert-success" role="alert">
+            <strong>Aviso:</strong> Una simple alerta de éxito <a class="alert-link" href="#">¡échale un vistazo!</a>
         </div>
-        <h3>Justify</h3>
-        <p>Clase justificar párrafo <code>text-justify</code></p>
-        <div class="row">
-            <div class="col-12 col-one">
-                <p class="text-justify">Donec eu tortor at arcu sodales volutpat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam dui odio, volutpat in justo et, fringilla placerat ante. Curabitur viverra turpis sed iaculis placerat. Aenean metus justo, dictum at auctor nec, sollicitudin in ex. Nullam imperdiet vulputate tortor at convallis. Vivamus fermentum ex metus, ut commodo massa suscipit ut. Maecenas sed diam eu orci rutrum porta vel at nibh. Etiam rhoncus quis nisl in ornare. Ut dapibus urna vel imperdiet suscipit. Donec mollis nec dolor non laoreet. Nam eget neque nunc. </p>
-            </div>
+        <div class="alert alert-danger" role="alert">
+            <strong>Aviso:</strong> Una simple alerta de peligro <a class="alert-link" href="#">¡échale un vistazo!</a>
         </div>
-        <h3>Text transform</h3>
-        <p>Clase que transforma el texto a: minúsculas <code>text-lowercase</code>, mayúsculas <code>text-uppercase</code> y Capital <code>text-capitalize</code></p>
-        <div class="row">
-            <div class="col-12 col-one">
-                <p class="text-lowercase">Estoy totalmente en minúsculas <small>Minúsculas</small></p>
-                <p class="text-uppercase">Estoy totalmente en mayúsculas <small>Mayúsculas</small></p>
-                <p class="text-capitalize">La primera letra de cada alabra está en Mayúscula <small>Capital</small></p>
-            </div>
-        </div>    
-        <h3>Font weight and italics</h3>
-        <ul>
-            <li>Clases que cambian el peso de la negrilla de un texto <code>font-weight-bold, font-weight-bolder, font-weight-normal, font-weight-light, font-weight-lighter</code> </li>
-            <li>Clase que cambia el texto a cursiva <code>font-italic</code></li>
-        </ul>
-        <div class="row">
-            <div class="col-12 col-two">
-                    <p class="font-weight-bold">Soy un texto en negrita. <small>font-weight-bold</small></p>
-                    <p class="font-weight-bolder">Soy un texto de mayor peso (relativo al elemento principal). <small>font-weight-bolder</small></p>
-                    <p class="font-weight-normal">Soy un texto de peso normal. <small>font-weight-normal</small></p>
-                    <p class="font-weight-light">Soy un texto ligero. <small>font-weight-light</small></p>
-                    <p class="font-weight-lighter">Soy un texto más ligero (relativo al elemento principal). <small>font-weight-lighter</small></p>
-                    <p class="font-italic">Soy un texto en cursiva. <small>font-italic</small></p>
-            </div>
-        </div>    
+        <div class="alert alert-warning" role="alert">
+            <strong>Aviso:</strong> Una simple alerta de advertencia <a class="alert-link" href="#">¡échale un vistazo!</a>
+        </div>
+        <div class="alert alert-info" role="alert">
+            <strong>Aviso:</strong> Una simple alerta de información <a class="alert-link" href="#">¡échale un vistazo!</a>
+        </div>
+        <div class="alert alert-light" role="alert">
+            <strong>Aviso:</strong> Una simple alerta de luz <a class="alert-link" href="#">¡échale un vistazo!</a>
+        </div>
+        <div class="alert alert-dark" role="alert">
+            <strong>Aviso:</strong> Una simple alerta oscura <a class="alert-link" href="#">¡échale un vistazo!</a>
+        </div>   
+    </div>
+    <div class="container">
+        <p>Podemos personalizar el contenido de una alerta</p>
+        <div class="alert alert-info">
+            <h2>Aviso</h2>
+            <p>Laboriosam odio blanditiis in cumque soluta iure possimus maxime earum itaque quidem natus dignissimos reprehenderit, officia dolore eos, molestias sit vero? Placeat!</p>
+            <button class="btn btn-link alert-link">Más detalles</button>
+        </div>
     </div>
 
     <script src="./dist/assets/js/jquery.min.js"></script>
