@@ -11,51 +11,85 @@
 </head>
 <body>
     <header class="container">
-        <h1>Alertas</h1>
+        <h1>Insignias/Badges</h1>
     </header>
     <div class="container">
-        <p>Usando las clases: <code>alert, alert-primary, alert-secondary, alert-success, alert-danger, alert-warning, alert-info, alert-light, alert-dark, alert-link</code> podemos representar bloques de mensaje contextuales en respuesta a acciones típicas de los usuarios.</p>
-        <div class="alert alert-primary" role="alert">
-            <strong>Aviso:</strong> Una simple alerta primaria <a class="alert-link" href="#">¡échale un vistazo!</a>
+        <p>Con las insignias podemos:</p>
+        <div class="row">
+            <div class="col-4 col-zero">
+                <h2>Cursos</h2>
+                <p>Crear etiquetas</p>
+                <ul class="list">
+                    <li>Angular y Firebase</li>
+                    <li>Marketing Digital <span class="badge promo">Promo</span></li>
+                    <li>React, Redux</li>
+                    <li>Android</li>
+                    <li>Vue <span class="badge badge-success">New</span></li>
+                </ul>
+            </div>
+            <div class="col-4 col-zero">
+                <h2>Mensajes</h2>
+                <p>Crear notificaciones</p>
+                <ul class="list">
+                    <li>Recibidos <span class="badge badge-danger">13</span></li>
+                    <li>Destacados <span class="badge badge-warning"></span></li>
+                    <li>Pospuestos <span class="badge badge-info">3</span></li>
+                    <li>Enviados <span class="badge badge-info"></span></li>
+                    <li>Borradores <span class="badge badge-info">1</span></li>
+                    <li>Spam <span class="badge badge-info">9</span></li>
+                </ul>
+            </div>
+            <div class="col-4 col-zero">
+                <h2>Encabezados</h2>
+                <p>Las insignias se adaptan al tamaño del elemento padre</p>
+                <h1>Título #1 <span class="badge badge-primary">H1</span></h1>
+                <h2>Título #2 <span class="badge badge-secondary">H2</span></h2>
+                <h3>Título #3 <span class="badge badge-success">H3</span></h3>
+                <h4>Título #4 <span class="badge badge-danger">H4</span></h4>
+                <h5>Título #5 <span class="badge badge-warning">H5</span></h5>
+                <h6>Título #6 <span class="badge badge-info">H6</span></h6>
+            </div>
         </div>
-        <div class="alert alert-secondary" role="alert">
-            <strong>Aviso:</strong> Una simple alerta secundaria <a class="alert-link" href="#">¡échale un vistazo!</a>
+
+        <div class="row">
+            <div class="col-4 col-zero">
+                <h2>Contextual variations</h2>
+                <p>Permite el cambio de apariencia de la insignia usando las clases <code>badge-primary, badge-secondary, badge-success, badge-danger, badge-warning, badge-info, badge-light, badge-dark</code> </p>
+                <span class="badge badge-primary">Primary</span>
+                <span class="badge badge-secondary">Secondary</span>
+                <span class="badge badge-success">Success</span>
+                <span class="badge badge-danger">Danger</span>
+                <span class="badge badge-warning">Warning</span>
+                <span class="badge badge-info">Info</span>
+                <span class="badge badge-light">Light</span>
+                <span class="badge badge-dark">Dark</span>
+            </div>
+            <div class="col-4 col-zero">
+                <h2>Pill badges</h2>
+                <p>Hacer las insignias más redondas usando la clase <code>badge-pill</code> </p>
+                <span class="badge badge-pill badge-primary">Primary</span>
+                <span class="badge badge-pill badge-secondary">Secondary</span>
+                <span class="badge badge-pill badge-success">Success</span>
+                <span class="badge badge-pill badge-danger">Danger</span>
+                <span class="badge badge-pill badge-warning">Warning</span>
+                <span class="badge badge-pill badge-info">Info</span>
+                <span class="badge badge-pill badge-light">Light</span>
+                <span class="badge badge-pill badge-dark">Dark</span>
+            </div>
+            <div class="col-4 col-zero">
+                <h2>Links</h2>
+                <p>El uso de las clases contextuales <code>.badge-*</code> en un elemento <a> proporciona rápidamente credenciales accionables con estados de desplazamiento y enfoque.</p>
+                <a href="#" class="badge badge-primary">Primary</a>
+                <a href="#" class="badge badge-secondary">Secondary</a>
+                <a href="#" class="badge badge-success">Success</a>
+                <a href="#" class="badge badge-danger">Danger</a>
+                <a href="#" class="badge badge-warning">Warning</a>
+                <a href="#" class="badge badge-info">Info</a>
+                <a href="#" class="badge badge-light">Light</a>
+                <a href="#" class="badge badge-dark">Dark</a>
+            </div>
         </div>
-        <div class="alert alert-success" role="alert">
-            <strong>Aviso:</strong> Una simple alerta de éxito <a class="alert-link" href="#">¡échale un vistazo!</a>
-        </div>
-        <div class="alert alert-danger" role="alert">
-            <strong>Aviso:</strong> Una simple alerta de peligro <a class="alert-link" href="#">¡échale un vistazo!</a>
-        </div>
-        <div class="alert alert-warning" role="alert">
-            <strong>Aviso:</strong> Una simple alerta de advertencia <a class="alert-link" href="#">¡échale un vistazo!</a>
-        </div>
-        <div class="alert alert-info" role="alert">
-            <strong>Aviso:</strong> Una simple alerta de información <a class="alert-link" href="#">¡échale un vistazo!</a>
-        </div>
-        <div class="alert alert-light" role="alert">
-            <strong>Aviso:</strong> Una simple alerta de luz <a class="alert-link" href="#">¡échale un vistazo!</a>
-        </div>
-        <div class="alert alert-dark" role="alert">
-            <strong>Aviso:</strong> Una simple alerta oscura <a class="alert-link" href="#">¡échale un vistazo!</a>
-        </div>   
-    </div>
-    <div class="container">
-        <p>Podemos personalizar el contenido de una alerta</p>
-        <div class="alert alert-info">
-            <h2>Aviso</h2>
-            <p>Laboriosam odio blanditiis in cumque soluta iure possimus maxime earum itaque quidem natus dignissimos reprehenderit, officia dolore eos, molestias sit vero? Placeat!</p>
-            <button class="btn btn-link alert-link">Más detalles</button>
-        </div>
-    </div>
-    <div class="container">
-        <p>Alertas con acciones incluidas. En este caso la posibilidad de cerrar la alerta</p> 
-        <div class="alert alert-warning alert-dismissible fade show" role="alert">
-            <strong>La configuración ha cambiado</strong><br> Si desea puede <a href="#" class="alert-link">reestablecer la configuración por defecto.</a>
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
+
     </div>
 
     <script src="./dist/assets/js/jquery.min.js"></script>

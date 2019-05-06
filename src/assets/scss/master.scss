@@ -77,4 +77,13 @@ hr {
         background-color: darken( $bg-row-color, 40% );
         color: $color-text-light;
     }
+
+    .list {
+        list-style: none;
+        text-align: left;
+
+        .promo {
+            color: red;
+        }
+    }
 }
