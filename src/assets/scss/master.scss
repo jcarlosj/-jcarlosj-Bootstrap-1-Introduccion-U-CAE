@@ -9,7 +9,7 @@ body {
 
 hr {
     background-color: darken( $color-text, 10% );
-    height: 2px;
+    height: 1px;
 }
 
 .row {
@@ -76,6 +76,10 @@ hr {
     & .col-nine {
         background-color: darken( $bg-row-color, 40% );
         color: $color-text-light;
+    }
+
+    p {
+        text-align: left;
     }
 
     .list {
