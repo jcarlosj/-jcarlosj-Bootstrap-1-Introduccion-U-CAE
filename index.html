@@ -11,100 +11,64 @@
 </head>
 <body>
     <header class="container">
-        <h1>Botones</h1>
+        <h1>Button Plugin</h1>
+        <p>Se puede controlar los estados de los botones o crear grupos de botones para más componentes como barras de herramientas.</p>
     </header>
     <div class="container">
         <div class="row">
             <div class="col-12 col-zero">
-                <h2>Button tags</h2>
-                <p>La clase <code>btn</code> esta diseñada para se usada con el elemento <code>button</code> Sin embargo también se puede aplicar a los elementos <code>a, input</code></p>
-                <p>Aunque algunos navegadores pueden aplicar representaciones ligeramente diferentes a las que deseamos, podemos ver como la clase <code>btn</code> en un elemento <code>a</code> puede ser usado para activar una funcionalidad de la página (como colapsar el contenido), en lugar de enlazar a otras o secciones dentro de la actual, a este tipo de enlaces se debe asignar un rol <code>rol="button"</code> para transmitir el proósito a las tecnologías de asistencia como lectores de pantalla</p>
+                <h2>Toggle states <span class="badge">Estado de alternacia</span></h2>
+                <p>Se debe agregar <code>data-toggle="button"</code> para alternar el estado de un botón activo. Si está activando un botón previamente, debe agregar manualmente la clase <code>.active</code> y <code>aria-pressed="true"</code> al elemento <code>button</code></p>
                 <hr>
-                <a class="btn btn-primary" href="#" role="button">Link</a>
-                <button class="btn btn-primary" type="submit">Button</button>
-                <input class="btn btn-primary" type="button" value="Input">
-                <input class="btn btn-primary" type="submit" value="Submit">
-                <input class="btn btn-primary" type="reset" value="Reset">
+                <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                    Single toggle
+                </button>
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-one">
-                <h2>Button style</h2>
-                <p>Bootstrap incluye varios estilos de botones predefinidos, cada uno con su propio propósito semántico, con algunos extras incluidos para un mayor control.</p>
-                <p>Las clases que permiten esto son: <code>btn-primary, btn-secondary, btn-success, btn-danger, btn-warning, btn-info, btn-light, btn-dark</code> </p>
-                <button type="button" class="btn btn-primary">Primary</button>
-                <button type="button" class="btn btn-secondary">Secondary</button>
-                <button type="button" class="btn btn-success">Success</button>
-                <button type="button" class="btn btn-danger">Danger</button>
-                <button type="button" class="btn btn-warning">Warning</button>
-                <button type="button" class="btn btn-info">Info</button>
-                <button type="button" class="btn btn-light">Light</button>
-                <button type="button" class="btn btn-dark">Dark</button>
-                
-                <button type="button" class="btn btn-link">Link</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-zero">
-                <h2>Outline buttons</h2>
-                <p>La clase <code>.btn-outline-*</code> elimina todas las imágenes de fondo y los colores de cualquier botón.</p>
-                <button type="button" class="btn btn-outline-primary">Primary</button>
-                <button type="button" class="btn btn-outline-secondary">Secondary</button>
-                <button type="button" class="btn btn-outline-success">Success</button>
-                <button type="button" class="btn btn-outline-danger">Danger</button>
-                <button type="button" class="btn btn-outline-warning">Warning</button>
-                <button type="button" class="btn btn-outline-info">Info</button>
-                <button type="button" class="btn btn-outline-light">Light</button>
-                <button type="button" class="btn btn-outline-dark">Dark</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-one">
-                <h2>Tamaños</h2>
-                <p>Las clases <code>btn-sm, btn-lg</code> esta predeterminadas para cambiar el tamaño de los botones</p>
-                <button type="button" class="btn btn-primary btn-sm">Botón pequeño</button>
-                <button type="button" class="btn btn-secondary btn-sm">Botón pequeño</button>
-                <button type="button" class="btn btn-primary">Botón estándar</button>
-                <button type="button" class="btn btn-secondary">Botón estándar</button>
-                <button type="button" class="btn btn-primary btn-lg">Botón grande</button>
-                <button type="button" class="btn btn-secondary btn-lg">Botón grande</button>
-                <p>También usando la clase <code>btn-block</code> podemos hacer que el botón se comporte como un elemento de bloque</p>
-                <button type="button" class="btn btn-block btn-primary btn-sm">Botón pequeño</button>
-                <button type="button" class="btn btn-block btn-secondary btn-sm">Botón pequeño</button>
-                <button type="button" class="btn btn-block btn-primary">Botón estándar</button>
-                <button type="button" class="btn btn-block btn-secondary">Botón estándar</button>
-                <button type="button" class="btn btn-block btn-primary btn-lg">Botón grande</button>
-                <button type="button" class="btn btn-block btn-secondary btn-lg">Botón grande</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-zero">
-                <h2>State buttons, links</h2>
+            <div class="col-6 col-zero">  
+                <h2>Checkbox</h2>
+                <p>Recordemos que los checkbox sirven para permitir al usuario la selección múltiple</p>
+                <div class="btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                        <input type="checkbox" checked autocomplete="off"> Checked
+                    </label>
+                </div>
+                <br>
+                <p>Seleccione los colores de su predilección</p>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                        <input type="checkbox" name="options" id="option1" autocomplete="off" checked> Amarillo
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="checkbox" name="options" id="option2" autocomplete="off"> Azul
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="checkbox" name="options" id="option3" autocomplete="off"> Rojo
+                    </label>
+                </div>
             </div>
             <div class="col-6 col-zero">
-                <h3>Disabled (desactivados)</h3>
-                <h4>Botones</h4>
-                <p>Aplicamos la propiedad <code>disabled</code> a los dos elementos <code>button</code></p>
-                <button type="button" class="btn btn-lg btn-primary" aria-disabled="true" disabled>Primary button</button>
-                <button type="button" class="btn btn-secondary btn-lg" aria-disabled="true" disabled>Button</button>
+                <h2>Radio button</h2>
+                <p>Recordemos que los checkbox sirven para permitir al usuario selección única</p>
+                <div class="btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                        <input type="radio" checked autocomplete="off"> Radio
+                    </label>
+                </div>
                 <br>
-                <h4>Enlaces</h4>
-                <p>Aplicamos la propiedad <code>disabled</code> a los dos elementos <code>button</code></p>
-                <a href="#" class="btn btn-primary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
-                <a href="#" class="btn btn-secondary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Link</a>
-            </div>
-            <div class="col-6 col-zero">
-                <h3>Active (activados)</h3>
-                <h4>Botones</h4>
-                <p>Aplicamos la propiedad <code>disabled</code> a los dos elementos <code>button</code></p>
-                <button type="button" class="btn btn-lg btn-primary">Primary button</button>
-                <button type="button" class="btn btn-secondary btn-lg">Button</button>
-                <br>
-                <h3>Enlaces</h3>
-                <p>Aplicamos la clase <code>active</code> a los dos elementos <code>a</code></p>
-                <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
-                <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
-                <p> Entonces, para estar seguro, agregue un atributo <code>tabindex = "- 1"</code> en estos enlaces (para evitar que reciban atención al teclado) y use JavaScript personalizado para deshabilitar su funcionalidad.</p>
+                <p>¿De qué color es el caballo blanco de Bolivar?</p>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                        <input type="radio" name="options" id="option1" autocomplete="off" checked> Blanco
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> Negro
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> Todas las anteriores
+                    </label>
+                </div>
             </div>
         </div>
     </div>
