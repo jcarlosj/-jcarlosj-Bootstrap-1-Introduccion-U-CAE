@@ -11,66 +11,134 @@
 </head>
 <body>
     <header class="container">
-        <h1>Button Plugin</h1>
-        <p>Se puede controlar los estados de los botones o crear grupos de botones para más componentes como barras de herramientas.</p>
+        <h1>Agrupación de botones</h1>
     </header>
     <div class="container">
         <div class="row">
-            <div class="col-12 col-zero">
-                <h2>Toggle states <span class="badge">Estado de alternacia</span></h2>
-                <p>Se debe agregar <code>data-toggle="button"</code> para alternar el estado de un botón activo. Si está activando un botón previamente, debe agregar manualmente la clase <code>.active</code> y <code>aria-pressed="true"</code> al elemento <code>button</code></p>
-                <hr>
-                <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
-                    Single toggle
-                </button>
+            <div class="col-6 col-zero">
+                <h2>Buttons Group</h2>
+                <p>La clase <code>btn-group</code> indica que se creará un grupo de botones y cada uno de los botones con la clase <code>btn</code> y su respectiva clase de estilo</p>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary">Left</button>
+                    <button type="button" class="btn btn-secondary">Middle</button>
+                    <button type="button" class="btn btn-secondary">Right</button>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-6 col-zero">  
-                <h2>Checkbox</h2>
-                <p>Recordemos que los checkbox sirven para permitir al usuario la selección múltiple</p>
-                <div class="btn-group-toggle" data-toggle="buttons">
-                    <label class="btn btn-secondary active">
-                        <input type="checkbox" checked autocomplete="off"> Checked
-                    </label>
+
+            <div class="col-6 col-zero">
+                <h2>Tamaño de botones agrupados</h2>
+                <p>La clase <code>.btn-group-*</code> a cada grupo <code>.btn</code>, incluyendo cada uno al agrupar varios grupos.</p>
+                <div class="btn-group btn-group-lg my-1" role="group" aria-label="...">
+                    <button type="button" class="btn btn-secondary">Left</button>
+                    <button type="button" class="btn btn-secondary">Middle</button>
+                    <button type="button" class="btn btn-secondary">Right</button>
                 </div>
                 <br>
-                <p>Seleccione los colores de su predilección</p>
-                <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                    <label class="btn btn-secondary active">
-                        <input type="checkbox" name="options" id="option1" autocomplete="off" checked> Amarillo
-                    </label>
-                    <label class="btn btn-secondary">
-                        <input type="checkbox" name="options" id="option2" autocomplete="off"> Azul
-                    </label>
-                    <label class="btn btn-secondary">
-                        <input type="checkbox" name="options" id="option3" autocomplete="off"> Rojo
-                    </label>
+                <div class="btn-group my-1" role="group" aria-label="...">
+                    <button type="button" class="btn btn-secondary">Left</button>
+                    <button type="button" class="btn btn-secondary">Middle</button>
+                    <button type="button" class="btn btn-secondary">Right</button>
+                </div>
+                <br>
+                <div class="btn-group btn-group-sm my-1" role="group" aria-label="...">
+                    <button type="button" class="btn btn-secondary">Left</button>
+                    <button type="button" class="btn btn-secondary">Middle</button>
+                    <button type="button" class="btn btn-secondary">Right</button>
+                </div>
+            </div>
+        
+            <div class="col-12 col-zero">
+                <h2>Toolbars</h2>
+                <p>La clase <code>btn-toolbar</code> indica que se creará una barra de herramientas que agrupará grupos de botones con la clase <code>btn</code> y su respectiva clase de estilo, así como los grupos de botones con su clase <code>btn-group</code></p>
+                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group mr-2" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-secondary">1</button>
+                        <button type="button" class="btn btn-secondary">2</button>
+                        <button type="button" class="btn btn-secondary">3</button>
+                        <button type="button" class="btn btn-secondary">4</button>
+                    </div>
+                    <div class="btn-group mr-2" role="group" aria-label="Second group">
+                        <button type="button" class="btn btn-secondary">5</button>
+                        <button type="button" class="btn btn-secondary">6</button>
+                        <button type="button" class="btn btn-secondary">7</button>
+                    </div>
+                    <div class="btn-group" role="group" aria-label="Third group">
+                        <button type="button" class="btn btn-secondary">8</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-zero">
+                <p>Podemos crear barras de herramientas que agrupen otro tipo de elementos. En este caso la clase para la barra de herramientas <code>btn-toolbar</code> esta posee un grupo de botones que tienen la clase <code>btn-group</code> y un grupo de elementos input que usan las clases <code>input-group, input-group-prepend, input-group-text</code> y <code>form-control</code></p>
+                <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group mr-2" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-secondary">1</button>
+                        <button type="button" class="btn btn-secondary">2</button>
+                        <button type="button" class="btn btn-secondary">3</button>
+                        <button type="button" class="btn btn-secondary">4</button>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                        <div class="input-group-text" id="btnGroupAddon">@</div>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-zero">
+                <p>Y justificar cada grupo de elementos como deseemos</p>
+                <div class="btn-toolbar justify-content-between mb-3" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group mr-2" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-secondary">1</button>
+                        <button type="button" class="btn btn-secondary">2</button>
+                        <button type="button" class="btn btn-secondary">3</button>
+                        <button type="button" class="btn btn-secondary">4</button>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                        <div class="input-group-text" id="btnGroupAddon">@</div>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon">
+                    </div>
                 </div>
             </div>
             <div class="col-6 col-zero">
-                <h2>Radio button</h2>
-                <p>Recordemos que los checkbox sirven para permitir al usuario selección única</p>
-                <div class="btn-group-toggle" data-toggle="buttons">
-                    <label class="btn btn-secondary active">
-                        <input type="radio" checked autocomplete="off"> Radio
-                    </label>
-                </div>
-                <br>
-                <p>¿De qué color es el caballo blanco de Bolivar?</p>
-                <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                    <label class="btn btn-secondary active">
-                        <input type="radio" name="options" id="option1" autocomplete="off" checked> Blanco
-                    </label>
-                    <label class="btn btn-secondary">
-                        <input type="radio" name="options" id="option2" autocomplete="off"> Negro
-                    </label>
-                    <label class="btn btn-secondary">
-                        <input type="radio" name="options" id="option3" autocomplete="off"> Todas las anteriores
-                    </label>
+                <h2>Nesting <span class="badge">Anidación</span></h2>
+                <p>También se pueden anidar grupos de botones</p>
+                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                    <button type="button" class="btn btn-secondary">1</button>
+                    <button type="button" class="btn btn-secondary">2</button>
+                    
+                    <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <a class="dropdown-item" href="#">Dropdown link</a>
+                        <a class="dropdown-item" href="#">Dropdown link</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="col-6 col-zero">
+                <h2>Vertical orientation <span class="badge">Orientación vertical</span></h2>
+                <p>Se puede cambiar el flujo de los elementos agrupados de manera que formen verticalmente usando la clase <code>btn-group-vertical</code>. No se admiten los menús desplegables de división aquí.</p>
+                <div class="btn-group btn-group-vertical" role="group" aria-label="Button group with nested dropdown">
+                    <button type="button" class="btn btn-secondary">1</button>
+                    <button type="button" class="btn btn-secondary">2</button>
+                    
+                    <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <a class="dropdown-item" href="#">Dropdown link</a>
+                        <a class="dropdown-item" href="#">Dropdown link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>     
     </div>
 
     <script src="./dist/assets/js/jquery.min.js"></script>
